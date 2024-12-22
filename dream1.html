@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Events</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        header {
+            position: relative;
+            height: 100vh;
+            color: white;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .about-us h2{
+            color: #e91e63;
+            font-weight: bold;
+        }
+        .what-we-do h2 {
+            font-size: 2.5rem;
+            color: #e91e63;
+            font-weight: bold;
+        }
+        .what-we-do h3{
+            color:#252424;
+            font-weight: bold;
+        }
+        .testimonials h2 {
+            font-size: 2.5rem;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+
+        .about-us .btn:hover, 
+        .contact-form button:hover {
+            background-color: #1e92eb;
+        }
+    
+
+        .locate-us h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .locate-us label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .locate-us input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .locate-us button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .locate-us button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+            }
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-logo {
+            max-width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="d-flex align-items-center justify-content-center">
+        <video autoplay muted loop>
+            <source src="Images/v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content text-center">
+            <h1>Welcome to Dreams Events</h1>
+            <p class="lead">Making Every Occasion Special</p>
+        </div>
+        <nav class="position-absolute top-0 end-0 p-3">
+            <a href="#about-us" class="text-white mx-2" style="font-weight: bold;">About Us</a>
+            <a href="#what-we-do" class="text-white mx-2" style="font-weight: bold;">What We Do</a>
+            <a href="#review" class="text-white mx-2" style="font-weight: bold;">Review</a>
+            <a href="#locate-us" class="text-white mx-2" style="font-weight: bold;">Locate Us</a>
+            <a href="#contact" class="text-white mx-2" style="font-weight: bold;">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">About Us</h2>
+            <p class="lead">We are Corporate Event Planners and one of the Best Event Management Company in Bangalore with our services available PAN India. 
+                Our forte lies in delivering cutting edge, innovative and professional event management services. We are a bunch of fun-loving, energetic, 
+                and passionate people working towards the common goal of providing exceptional services. From inspirational ideas to stunning productions, 
+                strong themes, and creative programs, we do everything to create memorable experiences and branding opportunities that exceed customer expectations.</p>
+                <p>We take pride in presenting ourselves as one of the best in the industry. We offer a wide range of event management services. Be it a Virtual conference, 
+                    Award ceremony, Product launch, Family event, or Sports event, we have you covered. We are a one-stop solution to all your corporate situations.</p>
+                <a href="#" class="btn btn-primary mt-3">Learn More</a>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="what-we-do py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">What We Do</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="event1.html">
+                        <video autoplay muted loop class="w-100 rounded shadow-sm">
+                            <source src="Images/v2.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <h3 class="mt-3">Corporate Events</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="event2.html">
+                        <video autoplay muted loop class="w-100 rounded shadow-sm">
+                            <source src="Images/v3.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <h3 class="mt-3">Concerts</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="event3.html">
+                        <video autoplay muted loop class="w-100 rounded shadow-sm">
+                            <source src="Images/v4.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <h3 class="mt-3">Weddings</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="review" class="testimonials py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Lovely Customers</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-3 bg-white rounded shadow">
+                        <div class="stars text-warning fs-4">★★★★★</div>
+                        <p>The wedding arrangement by Dreams Event was truly outstanding. The decor was elegant and beautifully executed, creating a magical atmosphere that exceeded expectations.</p>
+                        <h3>Arundhati Rao</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-white rounded shadow">
+                        <div class="stars text-warning fs-4">★★★★★</div>
+                        <p>Thank you for your partnership in pulling off a fantastic Annual Day event for us at Eagle View. All arrangements ranging from the LED backdrop to the MC, stage and lighting, choreography, and make-up, and last but not least the high-energy DJ ended the event on a high note! This event has certainly set a high benchmark for the quality of events as we move ahead!</p>
+                        <h3>Raghav</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-white rounded shadow">
+                        <div class="stars text-warning fs-4">★★★★★</div>
+                        <p>We would like to extend our appreciation for the amazing work done by you & the entire team at Dreams Events and Services.</p>
+                        <h3>Manohar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locate Us Section -->
+    <section id="locate-us" class="locate-us py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Locate <span style="color: #e91e63;">Us</span></h2>
+            <p class="mb-4">We are glad to assist you with your event requirements. Please feel free to contact us...</p>
+            <div class="row g-4">
+                <!-- Google Map Section -->
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1930563805794!2d77.57330427403845!3d12.917663216528732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144eb27b2d7b%3A0x74b7d7bd98ed64f6!2sDreams%20Events%20and%20Services!5e0!3m2!1sen!2sin!4v1695992030761!5m2!1sen!2sin" 
+                        width="100%" height="300" class="rounded border" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    
+                <!-- Contact Form Section -->
+                <div class="col-md-6">
+                    <form action="submit_form.php" method="POST" onsubmit="return validateForm(event)">
+                        <div class="mb-3">
+                           
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            
+                            <textarea name="message" id="message" rows="4" class="form-control" placeholder="Message Us" required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+    
+                    <!-- Validation Script -->
+                    <script>
+                        function validateForm(event) {
+                            const name = document.getElementById('name').value.trim();
+                            const email = document.getElementById('email').value.trim();
+                            const message = document.getElementById('message').value.trim();
+    
+                            if (name === '') {
+                                alert('Name is required.');
+                                event.preventDefault();
+                                return false;
+                            }
+    
+                            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                            if (!emailPattern.test(email)) {
+                                alert('Please enter a valid email address in the format name@example.com.');
+                                event.preventDefault();
+                                return false;
+                            }
+    
+                            if (message === '') {
+                                alert('Message cannot be empty.');
+                                event.preventDefault();
+                                return false;
+                            }
+    
+                            return true;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="Images/logo.jpg" alt="Dreams Events Logo" class="footer-logo">
+        <p>We, the Best Event Management Company & Planners, are providing world-class services in this field for a long time.</p>
+        <h4>Contact</h4>
+        <p>Email: <a href="#">dreams@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919019934072">9019934072</a> or <a href="tel:+919886161926">9886161926</a></p>
+        <p>Address: #284, Kanasu Complex Dibbur Ranjanukunte, Yelahanka. Near Presidency University</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
